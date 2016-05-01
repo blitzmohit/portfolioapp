@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="us.mohitarora.portfolioapp.MainActivity"
+    android:background="#ffdfeaf1">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/my_nanodegree_apps"
+    android:layout_centerHorizontal="true"
+    style="@style/TextAppearance.AppCompat.Headline"
+    android:id="@+id/headline.text"
+    android:layout_margin="12dp"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headline.text"
+        android:text="@string/popular_movies"
+        android:id="@+id/popularmovies"
+        android:layout_alignLeft="@+id/headline.text"
+        android:layout_alignStart="@+id/headline.text"
+        android:layout_alignRight="@+id/headline.text"
+        android:layout_alignEnd="@+id/headline.text"
+        style="@style/ButtonStyle" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/popularmovies"
+        android:text="@string/stock_hawk"
+        android:id="@+id/stockhawk"
+        android:layout_alignRight="@+id/popularmovies"
+        android:layout_alignEnd="@+id/popularmovies"
+        android:layout_alignLeft="@+id/popularmovies"
+        android:layout_alignStart="@+id/popularmovies"
+        style="@style/ButtonStyle"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stockhawk"
+        android:text="@string/build_it_bigger"
+        android:id="@+id/builditbigger"
+        android:layout_alignLeft="@+id/stockhawk"
+        android:layout_alignStart="@+id/stockhawk"
+        android:layout_alignRight="@+id/stockhawk"
+        android:layout_alignEnd="@+id/stockhawk"
+        style="@style/ButtonStyle"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/builditbigger"
+        android:text="@string/make_your_app_material"
+        android:id="@+id/makeyourappmaterial"
+        android:layout_alignLeft="@+id/builditbigger"
+        android:layout_alignStart="@+id/builditbigger"
+        android:layout_alignRight="@+id/builditbigger"
+        android:layout_alignEnd="@+id/builditbigger"
+        style="@style/ButtonStyle"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/makeyourappmaterial"
+        android:text="@string/go_ubiquitous"
+        android:id="@+id/goubiquitous"
+        android:layout_alignLeft="@+id/headline.text"
+        android:layout_alignStart="@+id/headline.text"
+        android:layout_alignRight="@+id/capstone"
+        android:layout_alignEnd="@+id/capstone"
+        style="@style/ButtonStyle"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/goubiquitous"
+        android:text="@string/capstone"
+        android:id="@+id/capstone"
+        android:layout_alignRight="@+id/headline.text"
+        android:layout_alignEnd="@+id/headline.text"
+        android:layout_alignLeft="@+id/makeyourappmaterial"
+        android:layout_alignStart="@+id/makeyourappmaterial"
+        style="@style/ButtonStyle"
+        android:background="#EC407A"/>
+</RelativeLayout>
